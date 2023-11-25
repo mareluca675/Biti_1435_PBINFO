@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int n, i, a, k, biti = 0;
+
+int main()
+{
+    ifstream fin("biti.in");
+    ofstream fout("biti.out");
+
+    fin >> n;
+
+    for(i = 1; i <= n; i ++)
+    {
+        fin >> a;
+
+        k = a + 1;
+
+        if((a & k) == 0 and a != 0)
+        {
+            biti ++;
+        }
+    }
+
+    fout << biti;
+
+    return 0;
+}
